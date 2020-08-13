@@ -170,3 +170,15 @@ class Ui_Dialog(object):
         self.label_15.setText(_translate("Dialog", "VOLTAGE"))
         self.pushButton.setText(_translate("Dialog", "SEND"))
         self.lineEdit_8.setText(_translate("Dialog", "Type command here"))
+import sys
+from PyQt5 import QtWidgets as qtw
+from PyQt5 import QtGui as qtg
+from PyQt5 import QtCore as qtc
+class MainWindow(qtw.QWidget):
+            def __init__(self):
+                super().__init__()
+                self.show()
+if __name__ == '__main__':
+                app = qtw.QApplication(sys.argv)
+                mw = MainWindow()
+                sys.exit(app.exec())
